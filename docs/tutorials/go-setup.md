@@ -186,6 +186,3 @@ git commit -m "Go Hello World program"
 ```
 git push origin main
 ```
-
-!!! note
-    This tutorial reuses instructions from the COMP 423 MkDocs tutorial.
