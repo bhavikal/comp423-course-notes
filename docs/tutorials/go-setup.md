@@ -29,20 +29,20 @@ Before starting, make sure you have:
 
 ## Step 1: Create a Local Directory and Initialize Git
 
-(A) Open your terminal.
+1. Open your terminal.
 
-(B) Create a new directory for your project and change into it:
+2. Create a new directory for your project and change into it:
 ```
 mkdir go-dev-container-tutorial
 cd go-dev-container-tutorial
 ```
 
-(C) Initialize a new Git repository:
+3. Initialize a new Git repository:
 ```
 git init
 ``` 
 
-(D) Create a README file:
+4. Create a README file:
 ```
 echo "# Hello World in Go" > README.md
 echo "To view the entire tutorial, visit my Course Notes site at https://github.com/bhavikal/comp423-course-notes/blob/main/docs/tutorials/go-setup.md." >> README.md
@@ -52,33 +52,33 @@ git commit -m "Initial commit with README"
 
 ## Step 2: Create a Remote Repository on GitHub
 
-(1) Log in to your GitHub account and go to the [Create a New Repository](https://github.com/new) page.
+1. Log in to your GitHub account and go to the [Create a New Repository](https://github.com/new) page.
 
-(2) Fill in the details of the repository as shown below:
+2. Fill in the details of the repository as shown below:
 
 * **Repository Name**: go-dev-container-tutorial
 * **Description**: "A tutorial on how to set up a dev container using Go."
 * **Visibility**: Public
 
-(3) Do not initialize the repository with a README, .gitignore, or license.
+3. Do not initialize the repository with a README, .gitignore, or license.
 
-(4) Click **Create Repository**
+4. Click **Create Repository**
 
 ## Step 3: Link your Local Repository to GitHub
 
-(1) Add the GitHub repository as a remote:
+1. Add the GitHub repository as a remote:
 ```
 git remote add origin https://github.com/<your-username>/go-dev-container-tutorial.git
 ```
 Replace ```<your-username>``` with your GitHub username.
 
-(2) Check your default branch name with the subcommand ```git branch```. If it is not ```main```, rename it to ```main``` with the following command: ```git branch -M main```. 
+2. Check your default branch name with the subcommand ```git branch```. If it is not ```main```, rename it to ```main``` with the following command: ```git branch -M main```. 
 
-(3) Push your local commits to the GitHub repository:
+3. Push your local commits to the GitHub repository:
 ```
 git push --set-upstream origin main
 ```
-(4) In your web browser, refresh your GitHub repository to see that the same commit you made locally has now been pushed to remote. You can use ```git log``` locally to see the commit ID and message which should match the ID of the most recent commit on GitHub.
+4. In your web browser, refresh your GitHub repository to see that the same commit you made locally has now been pushed to remote. You can use ```git log``` locally to see the commit ID and message which should match the ID of the most recent commit on GitHub.
 !!!note
     This is the result of pushing your changes to your remote repository.
 
