@@ -4,7 +4,7 @@
 * Reviewer: [Shayna Patel](https://github.com/shaynapat3l)
 
 !!! note
-    This tutorial reuses instructions from the COMP 423 MkDocs tutorial.
+    This tutorial reuses instructions from the [COMP 423 MkDocs tutorial](https://comp423-25s.github.io/resources/MkDocs/tutorial/).
 
 ### Introduction
 
@@ -78,9 +78,9 @@ Replace ```<your-username>``` with your GitHub username.
 ```
 git push --set-upstream origin main
 ```
-4. In your web browser, refresh your GitHub repository to see that the same commit you made locally has now been pushed to remote. You can use ```git log``` locally to see the commit ID and message which should match the ID of the most recent commit on GitHub.
-!!!note
-    This is the result of pushing your changes to your remote repository.
+4. In your web browser, refresh your GitHub repository to see that the same commit you made locally has now been pushed to remote.
+!!!tip
+    You can use ```git log``` locally to see the commit ID and message which should match the ID of the most recent commit on GitHub. This is the result of pushing your changes to your remote repository.
 
 # Part 2. Setting up the Development Environment
 
