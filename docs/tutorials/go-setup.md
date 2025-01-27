@@ -21,9 +21,8 @@ Before starting, make sure you have:
 1. **A GitHub account**: Sign up at [GitHub](https://github.com).
 2. **Git**: Install from [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 3. **Visual Studio Code (VS Code)**: Download and install from [here](https://code.visualstudio.com/).
-4. **Go VSCode Plugin**: Install from [here](https://marketplace.visualstudio.com/items?itemName=golang.go).
-5. **Docker installed**: Required to run the dev container. [Get Docker here](https://www.docker.com/products/docker-desktop).
-6. **Knowledge of command-line basics**.
+4. **Docker installed**: Required to run the dev container. [Get Docker here](https://www.docker.com/products/docker-desktop).
+5. **Knowledge of command-line basics**.
 
 # Part 1. Project Setup: Creating the Repository
 
@@ -146,11 +145,17 @@ func main() {
 }
 ```
 
-2. **Run or build the program**:
+2. **```run``` or ```build``` the program**:
 !!!note
-    There are two ways to run our Hello World program. The first is by using the run subcommand, and the second is by using the build subcommand. If you choose to use the build command, make sure to run the built binary as well.
+    There are two different ways to execute our Hello World program. The first is by using the ```run``` subcommand, and the second is by using the ```build``` subcommand. 
 
-**Run the program**:
+    ```run``` compiles your Go code into a **temporary** binary file, runs it, and then deletes the binary. You may want to use ```run``` for quick testing during development. 
+    
+    ```build``` compiles your Go code into a **permanent** binary file that you can save and run later. You may want to use ```build`` for creating a single executable for sharing or deployment.
+    
+    If you choose to use the ```build``` command, make sure to run the built binary as well.
+
+**```run``` the program**:
 ```
 go run main.go
 ```
@@ -158,7 +163,7 @@ This compiles and runs the Go program, indicating that it works.
 
 OR
 
-**Build the program**:
+**```build``` the program**:
 ```
 go build -o bin/hello-world
 ```
